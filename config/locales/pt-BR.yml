@@ -1,2 +1,15 @@
 pt-BR:
-  hello: "Hello world"
+  activerecord:
+    models:
+      post: 'Post'
+      comment: 'Comentário'
+
+    attributes:
+      post:
+        title: 'Título'
+        author: 'Autor'
+        body: 'Post'
+
+      comment:
+        author: 'Autor'
+        body: 'Comentário'
