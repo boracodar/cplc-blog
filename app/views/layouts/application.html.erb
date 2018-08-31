@@ -19,6 +19,31 @@
     </div>
 
     <div class='container'>
+      <% flash.each do |type, message| %>
+        <div class='alert alert-<%= type == 'alert' ? 'danger' : 'success' %> alert-dismissible fade show' role='alert'>
+          <%= message %>
+          <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+            <span aria-hidden='true'>&times;</span>
+          </button>
+        </div>
+      <% end %>
+
+      <div class='row'>
+        <div class='col-4 offset-8'>
+          <div class='search'>
+            <%= form_with url: search_posts_path, method: :get, local: true, class: 'form-inline' do |form| %>
+              <div class='form-group mx-3 mb-3'>
+                <%= form.search_field :q, class: 'form-control', required: true,
+                  placeholder: 'Busca', value: params[:q] %>
+              </div>
+
+              <%= form.submit 'Buscar', class: 'btn btn-primary mb-3',
+                data: { disable_with: 'Buscando...' } %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
       <%= yield %>
     </div>
 
