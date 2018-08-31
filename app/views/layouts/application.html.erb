@@ -10,6 +10,20 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class='bg-primary text-white text-center mb-4 p-4'>
+      <%= link_to root_path, class: 'text-white' do %>
+        <h1 class='display-4'>Blog do Lucas Caton</h1>
+      <% end %>
+
+      <p class='lead'>Olá, aqui você encontrará artigos sobre programação, tecnologia e carreira.</p>
+    </div>
+
+    <div class='container'>
+      <%= yield %>
+    </div>
+
+    <footer class='bg-primary text-white text-center mt-5 p-4'>
+      Copyright © Lucas Caton <%= Date.current.year %>.
+    </footer>
   </body>
 </html>
