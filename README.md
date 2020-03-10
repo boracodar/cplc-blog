@@ -1,8 +1,7 @@
 # CPLC - Blog
 
-App desenvolvido no [Curso de Programação Lucas Caton](https://www.lucascaton.com.br/curso).
+Applicação desenvolvida no [Curso de Programação Lucas Caton](https://www.lucascaton.com.br/cursos/cplc/).
 
 ### Documentações utilizadas nas vídeo-aulas
 
-* [Gem "bootstrap"](https://github.com/twbs/bootstrap-rubygem)
-* [Site oficial do Bootstrap](https://getbootstrap.com/docs)
+* [Bootstrap](https://getbootstrap.com/docs)
